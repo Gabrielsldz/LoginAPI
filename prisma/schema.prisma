@@ -1,0 +1,18 @@
+generator client {
+  provider             = "prisma-client-py"
+  interface            = "asyncio"
+  recursive_type_depth = 5
+}
+
+datasource db {
+  provider = "postgres"
+  url      = "postgres://postgres:1234@localhost:5433/testApi"
+}
+
+model User {
+  id             Int      @id @default(autoincrement())
+  name           String   @unique
+  password       String
+  invite_code    String   @unique
+  invite_count   Int      @default(0)
+}

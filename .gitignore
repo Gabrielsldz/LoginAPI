@@ -1,0 +1,24 @@
+# Ignorar a pasta do ambiente virtual
+.venv/
+
+# Ignorar arquivos compilados do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar arquivos de configuração do editor (ex: PyCharm, VSCode)
+.idea/
+.vscode/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de banco de dados temporários
+*.sqlite3
+
+# Ignorar arquivos do sistema operacional (como .DS_Store no Mac)
+.DS_Store
+
+# Ignorar arquivos do sistema de builds (ex: arquivos de configuração do Poetry)
+poetry.lock
